@@ -2,6 +2,12 @@ import { resolve } from 'path'
 import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      apiUrl: '',
+    },
+  },
+  
   alias: {
     public: resolve(__dirname, './public/')
   },
